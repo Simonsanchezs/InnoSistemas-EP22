@@ -41,5 +41,5 @@ public class Equipo {
 
     @OneToMany(mappedBy = "equipo")
     @JsonIgnore
-    private List<DashBoard> dashBoardList;
+    private List<Dashboard> dashBoardList;
 }

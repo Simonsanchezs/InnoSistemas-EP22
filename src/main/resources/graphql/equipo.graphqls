@@ -1,0 +1,12 @@
+type Equipo {
+    id: ID!
+    nombre: String
+    fecha_creacion: String  # Asumiendo que existe en tu entidad
+    curso: Curso            # Relación con Curso
+    # Otros campos que pueda tener tu entidad Equipo
+}
+
+input EquipoInput {
+    nombre: String
+    # No incluyas cursoId aquí, ya que lo pasas como argumento separado
+}
