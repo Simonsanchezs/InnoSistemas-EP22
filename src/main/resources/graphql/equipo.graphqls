@@ -3,6 +3,7 @@ type Equipo {
     nombre: String
     fecha_creacion: String  # Asumiendo que existe en tu entidad
     curso: Curso            # Relación con Curso
+    integracionList: [Integracion]
     # Otros campos que pueda tener tu entidad Equipo
 }
 

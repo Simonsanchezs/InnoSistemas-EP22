@@ -41,13 +41,13 @@ type Mutation {
     eliminarEstudianteDeCurso(cursoId: ID!, estudianteId: ID!): Boolean
 
     #dashboard
-    crearDashboard(dashboard: DashboardInput!, equipoId: ID!): Dashboard
-    actualizarDashboard(id: ID!, dashboard: DashboardInput!): Dashboard
+    crearDashboard(dashboardInput: DashboardInput!, equipoId: ID!): Dashboard
+    actualizarDashboard(id: ID!, dashboardInput: DashboardInput!): Dashboard
     eliminarDashboard(id: ID!): Boolean
 
     #equipo
-    crearEquipo(equipo: EquipoInput!, cursoId: ID!): Equipo
-    actualizarEquipo(id: ID!, equipo: EquipoInput!): Equipo
+    crearEquipo(equipoInput: EquipoInput!, cursoId: ID!): Equipo
+    actualizarEquipo(id: ID!, equipoInput: EquipoInput!): Equipo
     eliminarEquipo(id: ID!): Boolean
 
     #estudiante

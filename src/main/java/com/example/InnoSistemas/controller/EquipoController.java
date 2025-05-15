@@ -34,16 +34,16 @@
         }
 
         @MutationMapping
-        public Equipo crearEquipo(@Argument Equipo input, @Argument int cursoId) {
+        public Equipo crearEquipo(@Argument Equipo equipoInput, @Argument int cursoId) {
             Equipo equipo = new Equipo();
-            equipo.setNombre(input.getNombre());
+            equipo.setNombre(equipoInput.getNombre());
             return equipoService.save(equipo, cursoId);
         }
 
         @MutationMapping
-        public Equipo actualizarEquipo(@Argument int id, @Argument Equipo input) {
+        public Equipo actualizarEquipo(@Argument int id, @Argument Equipo equipoInput) {
             Equipo equipo = new Equipo();
-            equipo.setNombre(input.getNombre());
+            equipo.setNombre(equipoInput.getNombre());
             return equipoService.update(id, equipo);
         }
 

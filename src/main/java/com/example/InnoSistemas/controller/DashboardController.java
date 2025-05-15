@@ -34,20 +34,20 @@ public class DashboardController {
     }
 
     @MutationMapping
-    public Dashboard crearDashboard(@Argument Dashboard input, @Argument int equipoId) {
+    public Dashboard crearDashboard(@Argument Dashboard dashboardInput, @Argument int equipoId) {
         Dashboard dashboard = new Dashboard();
-        dashboard.setTareas_completadas(input.getTareas_completadas());
-        dashboard.setEntregas(input.getEntregas());
-        dashboard.setEstado(input.getEstado());
+        dashboard.setTareas_completadas(dashboardInput.getTareas_completadas());
+        dashboard.setEntregas(dashboardInput.getEntregas());
+        dashboard.setEstado(dashboardInput.getEstado());
         return dashboardService.save(dashboard, equipoId);
     }
 
     @MutationMapping
-    public Dashboard actualizarDashboard(@Argument int id, @Argument Dashboard input) {
+    public Dashboard actualizarDashboard(@Argument int id, @Argument Dashboard dashboardInput) {
         Dashboard dashboard = new Dashboard();
-        dashboard.setTareas_completadas(input.getTareas_completadas());
-        dashboard.setEntregas(input.getEntregas());
-        dashboard.setEstado(input.getEstado());
+        dashboard.setTareas_completadas(dashboardInput.getTareas_completadas());
+        dashboard.setEntregas(dashboardInput.getEntregas());
+        dashboard.setEstado(dashboardInput.getEstado());
         return dashboardService.update(id, dashboard);
     }
 
