@@ -26,7 +26,7 @@ public class Curso {
     @Column(name = "semestre")
     private String semestre;
 
-    @ManyToMany()
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinTable(
         name = "estudiante_curso",
         joinColumns = @JoinColumn(name = "curso_id", referencedColumnName = "curso_id"),
@@ -35,6 +35,5 @@ public class Curso {
     private List<Estudiante> estudianteList;
 
     @OneToMany(mappedBy = "curso")
-    @JsonIgnore
     private List<Equipo> equipoList;
 }

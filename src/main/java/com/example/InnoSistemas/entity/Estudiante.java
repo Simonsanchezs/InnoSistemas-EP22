@@ -29,15 +29,12 @@ public class Estudiante {
     @Column(name = "email")
     private String email;
 
-    @ManyToMany(mappedBy = "estudianteList")
-    @JsonIgnore
+    @ManyToMany(mappedBy = "estudianteList", fetch = FetchType.LAZY)
     private List<Curso> cursoList;
 
-    @OneToMany(mappedBy = "estudiante")
-    @JsonIgnore
+    @OneToMany(mappedBy = "estudiante", fetch = FetchType.LAZY)
     private List<Integracion> integracionList;
 
-    @OneToMany(mappedBy = "estudiante")
-    @JsonIgnore
+    @OneToMany(mappedBy = "estudiante", fetch = FetchType.LAZY)
     private List<Notificacion> notificacionList;
 }

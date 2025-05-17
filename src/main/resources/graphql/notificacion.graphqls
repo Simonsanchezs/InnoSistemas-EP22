@@ -1,0 +1,8 @@
+type Notificacion {
+    id: ID!
+    tipo: String
+    estudiante: Estudiante
+    equipo: Equipo
+    fecha_envio: String
+    leida: Boolean
+}

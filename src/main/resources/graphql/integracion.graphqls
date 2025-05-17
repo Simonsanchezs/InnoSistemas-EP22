@@ -1,0 +1,18 @@
+type Integracion {
+    id: ID!
+    estudiante: Estudiante
+    equipo: Equipo
+    rol: Rol
+    fecha_asignacion: String
+}
+
+# Si no existe, define el tipo Rol
+type Rol {
+    id: ID!
+    nombre: String
+    descripcion: String
+}
+
+input RolInput {
+    id: ID!
+}

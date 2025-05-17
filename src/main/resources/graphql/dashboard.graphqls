@@ -1,0 +1,13 @@
+type Dashboard {
+    id: ID!
+    tareas_completadas: Int
+    entregas: Int
+    estado: String
+    equipo: Equipo  # Asumiendo que tienes esta relación
+}
+
+input DashboardInput {
+    tareas_completadas: Int
+    entregas: Int
+    estado: String
+}

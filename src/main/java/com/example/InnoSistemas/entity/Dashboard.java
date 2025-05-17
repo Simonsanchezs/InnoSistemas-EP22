@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Table(name = "dashboard")
-public class DashBoard {
+public class Dashboard {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

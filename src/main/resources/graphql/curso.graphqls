@@ -1,0 +1,16 @@
+type Curso {
+    id: ID!
+    nombre: String
+    semestre: String
+    estudianteList: [Estudiante]
+}
+
+input CursoInput {
+    nombre: String
+    semestre: String
+    estudianteList: [EstudianteInput]
+}
+
+input EstudianteInput {
+    id: ID!
+}
