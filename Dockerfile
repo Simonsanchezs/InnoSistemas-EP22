@@ -34,4 +34,4 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 #docker build -t innosistemas .
 
 #para crear container
-#docker run -d -p 8080:8080 --env-file .env innosistemas
+#docker run -d -p 8080:8080 innosistemas
