@@ -11,6 +11,4 @@ input CursoInput {
     estudianteList: [EstudianteInput]
 }
 
-input EstudianteInput {
-    id: ID!
-}
+

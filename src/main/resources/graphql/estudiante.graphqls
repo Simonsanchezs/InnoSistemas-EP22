@@ -4,3 +4,10 @@ type Estudiante {
     apellidos: String
     email: String
 }
+
+input EstudianteInput {
+    id: ID
+    nombre: String
+    apellidos: String
+    email: String
+}

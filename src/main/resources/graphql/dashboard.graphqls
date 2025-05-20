@@ -3,7 +3,7 @@ type Dashboard {
     tareas_completadas: Int
     entregas: Int
     estado: String
-    equipo: Equipo  # Asumiendo que tienes esta relación
+    equipo: Equipo
 }
 
 input DashboardInput {
