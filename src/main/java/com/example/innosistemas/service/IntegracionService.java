@@ -25,13 +25,13 @@ public class IntegracionService {
     @Autowired
     private IntegracionRepository integracionRepository;
 
-    @Autowired
+    
     private EstudianteRepository estudianteRepository;
 
-    @Autowired
+    
     private EquipoRepository equipoRepository;
 
-    @Autowired
+    
     private RolRepository rolRepository;
 
     public List<Integracion> findAll() {

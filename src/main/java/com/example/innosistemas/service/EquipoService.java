@@ -21,7 +21,7 @@ public class EquipoService {
     @Autowired
     private EquipoRepository equipoRepository;
 
-    @Autowired
+    
     private CursoRepository cursoRepository;
 
     public List<Equipo> findAll() {

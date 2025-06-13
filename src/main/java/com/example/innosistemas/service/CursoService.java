@@ -17,7 +17,7 @@ public class CursoService {
 
     @Autowired
     private CursoRepository cursoRepository;
-    @Autowired
+    
     
 
     public List<Curso> findAll() {

@@ -23,10 +23,10 @@ public class NotificacionService {
     @Autowired
     private NotificacionRepository notificacionRepository;
 
-    @Autowired
+    
     private EstudianteRepository estudianteRepository;
 
-    @Autowired
+    
     private EquipoRepository equipoRepository;
 
     public List<Notificacion> findAll() {

@@ -20,7 +20,7 @@ public class DashboardService {
     @Autowired
     private DashboardRepository dashboardRepository;
 
-    @Autowired
+   
     private EquipoRepository equipoRepository;
 
     public List<Dashboard> findAll() {
