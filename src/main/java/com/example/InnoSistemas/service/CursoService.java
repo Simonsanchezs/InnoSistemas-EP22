@@ -3,7 +3,6 @@ package com.example.InnoSistemas.service;
 import com.example.InnoSistemas.entity.Curso;
 import com.example.InnoSistemas.entity.Estudiante;
 import com.example.InnoSistemas.repository.CursoRepository;
-import com.example.InnoSistemas.repository.EstudianteRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +17,7 @@ public class CursoService {
     @Autowired
     private CursoRepository cursoRepository;
     @Autowired
-    private EstudianteRepository estudianteRepository;
+    
 
     public List<Curso> findAll() {
         return cursoRepository.findAll();
