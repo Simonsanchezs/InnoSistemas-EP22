@@ -20,14 +20,18 @@ import java.util.List;
 @Transactional
 public class NotificacionService {
 
+    private final NotificacionRepository notificacionRepository;
+    private final EstudianteRepository estudianteRepository;
+    private final EquipoRepository equipoRepository;
+
     @Autowired
-    private NotificacionRepository notificacionRepository;
-
-    
-    private EstudianteRepository estudianteRepository;
-
-    
-    private EquipoRepository equipoRepository;
+    public NotificacionService(NotificacionRepository notificacionRepository,
+                               EstudianteRepository estudianteRepository,
+                               EquipoRepository equipoRepository) {
+        this.notificacionRepository = notificacionRepository;
+        this.estudianteRepository = estudianteRepository;
+        this.equipoRepository = equipoRepository;
+    }
 
     public List<Notificacion> findAll() {
         return notificacionRepository.findAll();

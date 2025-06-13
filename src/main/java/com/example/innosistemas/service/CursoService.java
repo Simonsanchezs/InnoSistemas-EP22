@@ -11,14 +11,17 @@ import com.example.innosistemas.repository.CursoRepository;
 
 import java.util.List;
 
+
 @Service
 @Transactional
 public class CursoService {
 
+    private final CursoRepository cursoRepository;
+
     @Autowired
-    private CursoRepository cursoRepository;
-    
-    
+    public CursoService(CursoRepository cursoRepository) {
+        this.cursoRepository = cursoRepository;
+    }
 
     public List<Curso> findAll() {
         return cursoRepository.findAll();
@@ -44,28 +47,17 @@ public class CursoService {
         cursoRepository.deleteById(id);
     }
 
-//    public Curso findByIdWithEstudiantes(int id) {
-//        return cursoRepository.findByIdWithEstudiantes(id)
-//                .orElseThrow(() -> new RuntimeException("Curso no encontrado"));
-//    }
-
-    // Operaciones específicas para la relación con estudiantes
     public List<Estudiante> getEstudiantesByCursoId(Integer cursoId) {
         Curso curso = cursoRepository.findByIdWithEstudiantes(cursoId)
                 .orElseThrow(() -> new EntityNotFoundException("Curso no encontrado"));
         return curso.getEstudianteList();
     }
 
-    // Versión optimizada con FetchType.LAZY
     public void addEstudianteToCurso(Integer cursoId, Integer estudianteId) {
-        // Versión eficiente que no depende del FetchType
         cursoRepository.addEstudianteToCurso(cursoId, estudianteId);
     }
 
-    // Versión optimizada con FetchType.LAZY
     public void deleteEstudianteFromCurso(Integer cursoId, Integer estudianteId) {
-        // Versión eficiente que no depende del FetchType
         cursoRepository.removeEstudianteFromCurso(cursoId, estudianteId);
     }
-
 }

@@ -16,8 +16,12 @@ import java.util.List;
 @Transactional
 public class EstudianteService {
 
+    private final EstudianteRepository estudianteRepository;
+
     @Autowired
-    private EstudianteRepository estudianteRepository;
+    public EstudianteService(EstudianteRepository estudianteRepository) {
+        this.estudianteRepository = estudianteRepository;
+    }
 
     public List<Estudiante> findAll() {
         return estudianteRepository.findAll();

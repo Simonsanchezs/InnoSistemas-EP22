@@ -22,17 +22,21 @@ import java.util.List;
 @Transactional
 public class IntegracionService {
 
+    private final IntegracionRepository integracionRepository;
+    private final EstudianteRepository estudianteRepository;
+    private final EquipoRepository equipoRepository;
+    private final RolRepository rolRepository;
+
     @Autowired
-    private IntegracionRepository integracionRepository;
-
-    
-    private EstudianteRepository estudianteRepository;
-
-    
-    private EquipoRepository equipoRepository;
-
-    
-    private RolRepository rolRepository;
+    public IntegracionService(IntegracionRepository integracionRepository,
+                              EstudianteRepository estudianteRepository,
+                              EquipoRepository equipoRepository,
+                              RolRepository rolRepository) {
+        this.integracionRepository = integracionRepository;
+        this.estudianteRepository = estudianteRepository;
+        this.equipoRepository = equipoRepository;
+        this.rolRepository = rolRepository;
+    }
 
     public List<Integracion> findAll() {
         return integracionRepository.findAll();

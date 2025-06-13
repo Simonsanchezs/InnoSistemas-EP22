@@ -17,11 +17,14 @@ import java.util.List;
 @Transactional
 public class DashboardService {
 
-    @Autowired
-    private DashboardRepository dashboardRepository;
+    private final DashboardRepository dashboardRepository;
+    private final EquipoRepository equipoRepository;
 
-   
-    private EquipoRepository equipoRepository;
+    @Autowired
+    public DashboardService(DashboardRepository dashboardRepository, EquipoRepository equipoRepository) {
+        this.dashboardRepository = dashboardRepository;
+        this.equipoRepository = equipoRepository;
+    }
 
     public List<Dashboard> findAll() {
         return dashboardRepository.findAll();

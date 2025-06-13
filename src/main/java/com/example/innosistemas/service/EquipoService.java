@@ -18,11 +18,14 @@ import java.util.List;
 @Transactional
 public class EquipoService {
 
-    @Autowired
-    private EquipoRepository equipoRepository;
+    private final EquipoRepository equipoRepository;
+    private final CursoRepository cursoRepository;
 
-    
-    private CursoRepository cursoRepository;
+    @Autowired
+    public EquipoService(EquipoRepository equipoRepository, CursoRepository cursoRepository) {
+        this.equipoRepository = equipoRepository;
+        this.cursoRepository = cursoRepository;
+    }
 
     public List<Equipo> findAll() {
         return equipoRepository.findAll();
