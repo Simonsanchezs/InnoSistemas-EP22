@@ -13,7 +13,7 @@ import java.util.Optional;
 @Repository
 public interface CursoRepository extends JpaRepository<Curso, Integer> {
 
-    // Obtener curso con estudiantes (carga eager personalizada)
+    
     @Query("SELECT c FROM Curso c JOIN FETCH c.estudianteList WHERE c.id = :id")
     Optional<Curso> findByIdWithEstudiantes(@Param("id") Integer id);
 
