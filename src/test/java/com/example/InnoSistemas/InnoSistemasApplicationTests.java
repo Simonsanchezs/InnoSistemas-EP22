@@ -18,10 +18,7 @@ class InnoSistemasApplicationTests {
         
         
         System.out.println("Contexto de Spring cargado exitosamente con H2!");
+               
         
-        
-        
-    }
-
-    
+    }    
 }
