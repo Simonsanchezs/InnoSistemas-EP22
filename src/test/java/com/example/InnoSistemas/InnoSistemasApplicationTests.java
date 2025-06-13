@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @DataJpaTest 
 @ActiveProfiles("test") 
-class InnoSistemasApplicationTests {
+class innosistemasApplicationTests {
 
     
     
