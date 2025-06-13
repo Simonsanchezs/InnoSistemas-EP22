@@ -1,12 +1,13 @@
-package com.example.InnoSistemas.service;
+package com.example.innosistemas.service;
 
-import com.example.InnoSistemas.entity.Curso;
-import com.example.InnoSistemas.entity.Estudiante;
-import com.example.InnoSistemas.repository.CursoRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.example.innosistemas.entity.Curso;
+import com.example.innosistemas.entity.Estudiante;
+import com.example.innosistemas.repository.CursoRepository;
 
 import java.util.List;
 

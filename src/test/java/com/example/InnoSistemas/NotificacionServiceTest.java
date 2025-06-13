@@ -1,13 +1,5 @@
-package com.example.InnoSistemas;
+package com.example.innosistemas;
 
-
-import com.example.InnoSistemas.entity.Equipo;
-import com.example.InnoSistemas.entity.Estudiante;
-import com.example.InnoSistemas.entity.Notificacion;
-import com.example.InnoSistemas.repository.EquipoRepository;
-import com.example.InnoSistemas.repository.EstudianteRepository;
-import com.example.InnoSistemas.repository.NotificacionRepository;
-import com.example.InnoSistemas.service.NotificacionService;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,6 +9,14 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.example.innosistemas.entity.Equipo;
+import com.example.innosistemas.entity.Estudiante;
+import com.example.innosistemas.entity.Notificacion;
+import com.example.innosistemas.repository.EquipoRepository;
+import com.example.innosistemas.repository.EstudianteRepository;
+import com.example.innosistemas.repository.NotificacionRepository;
+import com.example.innosistemas.service.NotificacionService;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;

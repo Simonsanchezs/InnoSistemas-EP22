@@ -1,10 +1,12 @@
-package com.example.InnoSistemas.repository;
+package com.example.innosistemas.repository;
 
-import com.example.InnoSistemas.entity.Estudiante;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import com.example.innosistemas.entity.Estudiante;
+
 
 import java.util.Optional;
 

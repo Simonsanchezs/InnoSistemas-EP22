@@ -1,4 +1,4 @@
-package com.example.InnoSistemas.entity;
+package com.example.innosistemas.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

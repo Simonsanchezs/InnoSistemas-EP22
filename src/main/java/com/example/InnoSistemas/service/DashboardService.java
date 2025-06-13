@@ -1,13 +1,15 @@
-package com.example.InnoSistemas.service;
+package com.example.innosistemas.service;
 
-import com.example.InnoSistemas.entity.Dashboard;
-import com.example.InnoSistemas.entity.Equipo;
-import com.example.InnoSistemas.repository.DashboardRepository;
-import com.example.InnoSistemas.repository.EquipoRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.example.innosistemas.entity.Dashboard;
+import com.example.innosistemas.entity.Equipo;
+import com.example.innosistemas.repository.DashboardRepository;
+import com.example.innosistemas.repository.EquipoRepository;
+
 
 import java.util.List;
 

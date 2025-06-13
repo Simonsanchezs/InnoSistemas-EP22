@@ -1,11 +1,5 @@
-package com.example.InnoSistemas;
+package com.example.innosistemas;
 
-
-import com.example.InnoSistemas.entity.Curso;
-import com.example.InnoSistemas.entity.Equipo;
-import com.example.InnoSistemas.repository.CursoRepository;
-import com.example.InnoSistemas.repository.EquipoRepository;
-import com.example.InnoSistemas.service.EquipoService;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,6 +9,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.example.innosistemas.entity.Curso;
+import com.example.innosistemas.entity.Equipo;
+import com.example.innosistemas.repository.CursoRepository;
+import com.example.innosistemas.repository.EquipoRepository;
+import com.example.innosistemas.service.EquipoService;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;

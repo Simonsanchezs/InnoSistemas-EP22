@@ -1,11 +1,12 @@
-package com.example.InnoSistemas.controller;
+package com.example.innosistemas.controller;
 
-import com.example.InnoSistemas.entity.Integracion;
-import com.example.InnoSistemas.service.IntegracionService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
+
+import com.example.innosistemas.entity.Integracion;
+import com.example.innosistemas.service.IntegracionService;
 
 import java.util.List;
 

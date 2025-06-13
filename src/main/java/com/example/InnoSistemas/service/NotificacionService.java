@@ -1,15 +1,17 @@
-package com.example.InnoSistemas.service;
+package com.example.innosistemas.service;
 
-import com.example.InnoSistemas.entity.Equipo;
-import com.example.InnoSistemas.entity.Estudiante;
-import com.example.InnoSistemas.entity.Notificacion;
-import com.example.InnoSistemas.repository.EquipoRepository;
-import com.example.InnoSistemas.repository.EstudianteRepository;
-import com.example.InnoSistemas.repository.NotificacionRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.example.innosistemas.entity.Equipo;
+import com.example.innosistemas.entity.Estudiante;
+import com.example.innosistemas.entity.Notificacion;
+import com.example.innosistemas.repository.EquipoRepository;
+import com.example.innosistemas.repository.EstudianteRepository;
+import com.example.innosistemas.repository.NotificacionRepository;
+
 
 import java.time.LocalDateTime;
 import java.util.List;

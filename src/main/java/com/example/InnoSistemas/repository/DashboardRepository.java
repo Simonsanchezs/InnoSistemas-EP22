@@ -1,9 +1,11 @@
-package com.example.InnoSistemas.repository;
+package com.example.innosistemas.repository;
 
-import com.example.InnoSistemas.entity.Dashboard;
-import com.example.InnoSistemas.entity.Equipo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.example.innosistemas.entity.Dashboard;
+import com.example.innosistemas.entity.Equipo;
+
 
 import java.util.List;
 

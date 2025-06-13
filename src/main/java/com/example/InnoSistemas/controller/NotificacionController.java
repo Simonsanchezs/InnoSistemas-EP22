@@ -1,11 +1,12 @@
-package com.example.InnoSistemas.controller;
+package com.example.innosistemas.controller;
 
-import com.example.InnoSistemas.entity.Notificacion;
-import com.example.InnoSistemas.service.NotificacionService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
+
+import com.example.innosistemas.entity.Notificacion;
+import com.example.innosistemas.service.NotificacionService;
 
 import java.util.List;
 

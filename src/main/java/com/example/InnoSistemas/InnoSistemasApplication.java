@@ -1,4 +1,4 @@
-package com.example.InnoSistemas;
+package com.example.innosistemas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.example.InnoSistemas;
+package com.example.innosistemas;
 
 import org.junit.jupiter.api.Test;
 
